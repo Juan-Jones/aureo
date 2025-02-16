@@ -1,22 +1,17 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://td-sky.github.io", // replace this with your deployed domain
-  author: "TD-Sky",
-  profile: "https://github.com/TD-Sky/",
-  desc: "学习笔记、日常随笔",
-  title: "三维天空",
-  ogImage: "astropaper-og.jpg",
+  website: "https://earnonlinemoney.org", // replace this with your deployed domain
+  author: "Dejuan Jones",
+  profile: "https://github.com/juan-jones/",
+  desc: "Ultimate guide to earn money online free. Find legitimate side hustles, passive income ideas, online jobs & more.",
+  title: "Earn Money Online",
+  ogImage: "opengraph.jpg",
   lightAndDarkMode: true,
-  postPerIndex: 5,
-  postPerPage: 5,
+  postPerIndex: 6,
+  postPerPage: 10,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
   showArchives: true,
-  editPost: {
-    url: "https://github.com/satnaing/astro-paper/edit/main/src/content/blog",
-    text: "Suggest Changes",
-    appendFilePath: true,
-  },
 };
 
 export const LOCALE = {
@@ -24,11 +19,36 @@ export const LOCALE = {
   langTag: ["en-EN"], // BCP 47 Language Tags. Set this empty [] to use the environment default
 } as const;
 
+export const LOGO_IMAGE = {
+  enable: false,
+  svg: true,
+  width: 216,
+  height: 46,
+};
+
 export const SOCIALS: SocialObjects = [
   {
-    name: "Github",
-    href: "https://github.com/TD-Sky/",
-    linkTitle: ` ${SITE.title} on Github`,
+    name: "Facebook",
+    href: "https://www.facebook.com/earnmoneynowonline",
+    linkTitle: `${SITE.title} on Facebook`,
+    active: true,
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/company/earn-money-online-free",
+    linkTitle: `${SITE.title} on LinkedIn`,
+    active: true,
+  },
+  {
+    name: "X",
+    href: "https://x.com/moneyonline_fre",
+    linkTitle: `${SITE.title} on X`,
+    active: true,
+  },
+  {
+    name: "Pinterest",
+    href: "https://www.pinterest.com/Internetrevenue/",
+    linkTitle: `${SITE.title} on Pinterest`,
     active: true,
   },
 ];

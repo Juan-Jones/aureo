@@ -23,7 +23,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      Subscribe
+      Make Money on the Internet
       <a
         target="_blank"
         href="/rss.xml"
@@ -40,7 +40,21 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         </svg>
         <span class="sr-only">RSS Feed</span>
       </a>
-
+      <p>The digital world is full of opportunities for those ready to take action. 
+        Whether you want to build a side hustle, replace your full-time job, or create 
+        multiple income streams, making money online is more achievable than ever. But 
+        success doesn’t come from chasing trends—it comes from using the right strategies 
+        and staying consistent.
+      <p/>
+      <p>
+        At Earn Money Online, we focus on real, sustainable ways to generate income. From 
+        freelancing and blogging to eCommerce and passive income ideas, we break down what 
+        works, how to start, and how to grow.
+      <p/>
+      <p>  
+        No shortcuts, no hype—just practical steps to help you create financial freedom on 
+        your own terms. Let’s get started!
+      <p/>  
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
@@ -62,7 +76,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             <ul>
               {featuredPosts.map(({ data, slug }) => (
                 <Card
-                  href={`/posts/${slug}/`}
+                  href={`/blog/${slug}/`}
                   frontmatter={data}
                   secHeading={false}
                 />
@@ -83,7 +97,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
               ({ data, slug }, index) =>
                 index < SITE.postPerIndex && (
                   <Card
-                    href={`/posts/${slug}/`}
+                    href={`/blog/${slug}/`}
                     frontmatter={data}
                     secHeading={false}
                   />
@@ -95,7 +109,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     }
 
     <div class="all-posts-btn-wrapper">
-      <LinkButton href="/posts/">
+      <LinkButton href="/blog/">
         All Posts
         <svg xmlns="http://www.w3.org/2000/svg"
           ><path
